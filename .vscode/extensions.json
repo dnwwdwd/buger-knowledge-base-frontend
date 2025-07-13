@@ -1,0 +1,19 @@
+{
+  // 扩展推荐
+  "recommendations": [
+    // 推荐扩展 vue 官方推荐
+    "Vue.volar",
+    // 推荐扩展 EditorConfig 格式化 scss 换行问题
+    "EditorConfig.EditorConfig",
+    // 推荐扩展 unocss 官方推荐
+    "antfu.unocss",
+    // 推荐扩展 eslint 官方推荐
+    "dbaeumer.vscode-eslint",
+    // 推荐扩展 stylelint 官方推荐 格式化 scss 代码问题
+    "stylelint.vscode-stylelint"
+  ]
+}
+
+// 最好都安装启用一下，依赖都是最新版本的
+// 规范开发
+// 配置文件都配置好了 启用拓展后 vscode 自动保存 将修复不规范的代码

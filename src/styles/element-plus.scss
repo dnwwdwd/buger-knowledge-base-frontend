@@ -1,0 +1,49 @@
+.el-form{
+  .el-form-item{
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+  }
+}
+
+// el 弹框不知道为啥宽度会变大
+.el-popup-parent--hidden {
+  width: 100% !important;
+  overflow: hidden;
+}
+
+
+// messagebox 样式
+.is-message-box {
+  .el-message-box { 
+    border-radius: 16px;
+  }
+}
+
+// rounded-tooltip 提示框样式
+.rounded-tooltip {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  border-radius: 10px !important;
+}
+.rounded-tooltip-enter-from {
+  opacity: 0;
+  transform: scale(0.9); /* 进入前：缩小隐藏 */
+}
+.rounded-tooltip-enter-active,
+.rounded-tooltip-leave-active {
+  transition: transform 0.3s, opacity 0.3s; /* 缓入动画 */
+}
+.rounded-tooltip-enter-to {
+  opacity: 1;
+  transform: scale(1); /* 进入后：正常大小 */
+}
+.rounded-tooltip-leave-from {
+  opacity: 1;
+  transform: scale(1); /* 离开前：正常大小 */
+}
+.rounded-tooltip-leave-to {
+  opacity: 0;
+  transform: scale(0.9); /* 离开后：缩小隐藏 */
+}

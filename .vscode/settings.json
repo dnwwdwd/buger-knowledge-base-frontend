@@ -1,0 +1,61 @@
+{
+  "eslint.useFlatConfig": true,
+
+  // 关闭默认的配置，我们这里默认不开启prettier格式化
+  "prettier.enable": false,
+  // 关闭默认格式化
+  "editor.formatOnSave": false,
+  // 开启 stylint
+  "stylelint.enable": true,
+
+  // 保存自动修复
+  "editor.codeActionsOnSave": {
+    // 我们这里是指定自定义的修复
+    "source.fixAll.eslint": "explicit",
+    // 来源导入我们不需要给关闭掉
+    "source.organizeImports": "never",
+    // 使用 stylelint 来修复样式问题
+    "source.fixAll.stylelint": "explicit"
+  },
+
+  // 开启 stylelint
+  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass", "html"],
+
+  // 静默样式规则自动修复
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off", "fixable": true },
+    { "rule": "format/*", "severity": "off", "fixable": true },
+    { "rule": "*-indent", "severity": "off", "fixable": true },
+    { "rule": "*-spacing", "severity": "off", "fixable": true },
+    { "rule": "*-spaces", "severity": "off", "fixable": true },
+    { "rule": "*-order", "severity": "off", "fixable": true },
+    { "rule": "*-dangle", "severity": "off", "fixable": true },
+    { "rule": "*-newline", "severity": "off", "fixable": true },
+    { "rule": "*quotes", "severity": "off", "fixable": true },
+    { "rule": "*semi", "severity": "off", "fixable": true }
+  ],
+
+  // 在eslin中开启哪些语言的校验
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "xml",
+    "gql",
+    "graphql",
+    "astro",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
+  ]
+}

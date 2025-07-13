@@ -1,0 +1,32 @@
+// 覆盖一些 elx 组件样式
+
+// attachments 图片组件的 1.2.0 版本样式 bug
+.image-preview-container {
+  flex: none !important;
+}
+.elx-files-card-content {
+  gap: 8px;
+  .elx-files-card-description {
+    line-height: 1.35;
+  }
+}
+.prev-next-btn {
+  position: absolute;
+  top: calc(50% + 3px);
+   z-index: 10;
+   cursor: pointer;
+   transform: translateY(-50%);
+}
+.elx-attachments-file-card-wrap {
+  padding-top: 6px;
+}
+.elx-attachments-card {
+  user-select: none;
+}
+
+// 隐藏 elx-sender-header 组件的底部边框
+.el-sender-header {
+  border-bottom-color: transparent !important;
+}
+
+

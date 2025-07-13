@@ -1,0 +1,33 @@
+// 公共的图表按钮样式
+.btn-icon-btn {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 30%;
+  transition: all 0.3s ease;
+
+  // 鼠标移入
+  &:hover {
+    background-color: rgb(0 0 0 / 5%);
+    .svg-icon {
+      color: rgb(0 0 0 / 60%);
+    }
+  }
+
+  // 鼠标按下
+  &:active {
+    background-color: rgb(0 0 0 / 8%);
+    .svg-icon {
+      color: rgb(0 0 0 / 70%);
+    }
+  }
+
+  // 图标
+  .svg-icon {
+    color: rgb(0 0 0 / 50%);
+    user-select: none;
+  }
+}
